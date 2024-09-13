@@ -90,7 +90,7 @@ header {
 }
 
 .logo {
-    background: url("../images/profile-picture.webp");
+    background: url("../images/resume_picture.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,6 +170,28 @@ header {
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
+}
+
+/* ----------------------------------  Main  ------------------------------- */
+
+/* ---------------------------  Personal Info  ------------------------- */
+
+.social-icon {
+    font-size: 1.5rem;
+}
+
+.social-link {
+    color: rgb(0, 32, 8);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #b95c04;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 /*----------------------------------------------------------------Footer */
