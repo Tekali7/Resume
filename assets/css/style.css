@@ -97,8 +97,8 @@ header {
 }
 
 .logo {
-    background: url("../images/resume_picture.jpg");
-    background-position: center;
+    background: url("../images/resume_picture.webp");
+    background-position: 50% 18%;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
@@ -441,11 +441,35 @@ button[type="submit"] {
 
 /*----------------------------------------------------------------Media Queries */
 
+@media(min-width: 860px) {
+    .margin-bottom {
+        margin-bottom: 150px;
+    }
+}
+
 @media(min-width: 992px) {
     .center-form {
         padding-top: 30px;
         min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 767px) {
+    .logo {
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 600px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .logo {
+        background-size: contain;  
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-color: #faf7f2; 
+        min-height: 360px; 
     }
 }
