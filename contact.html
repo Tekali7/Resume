@@ -20,6 +20,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("UUXF5420Bf8Fgxe2R");
+        })();
+    </script>
     <title>Contact</title>
 </head>
 
@@ -67,7 +75,7 @@
                 <h5 class="uppercase text-center font-weight-bold">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
                             required />
@@ -108,6 +116,8 @@
 
     </footer>
     <script src="https://kit.fontawesome.com/2cb1de6351.js" crossorigin="anonymous"></script>
+     <!-- Javascript -->
+     <script src="assets/js/email.js"></script>
 </body>
 
 </html>
